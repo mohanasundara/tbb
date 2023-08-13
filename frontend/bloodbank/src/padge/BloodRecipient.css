@@ -1,0 +1,19 @@
+.card-mainh{
+    justify-content: center;
+    text-align: center;
+    background-color: #FFCCCB;
+
+
+    
+ }
+ 
+ .ws{
+    white-space: break-spaces;
+    font-weight: bold;
+    
+ }
+
+
+ .cardhead{
+   background-color: lightgray
+ }

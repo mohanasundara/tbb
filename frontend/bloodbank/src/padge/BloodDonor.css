@@ -1,0 +1,19 @@
+.width{
+    
+    background-color: blue;
+}
+body{
+    background-color: #34568B;
+}
+.container{
+   padding-top: 1%;
+   
+}
+.cd{
+    justify-content: center;
+    text-align: center;
+    background-color: #FFCCCB;
+}
+.radio{
+    background-color:gold;
+}
