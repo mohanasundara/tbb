@@ -17,6 +17,9 @@
     Distic:{
         type:String
     },
+    BloodDate:{
+        type:String
+    },
    
     PhoneNumber:{
         type:String

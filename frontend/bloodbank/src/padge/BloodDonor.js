@@ -18,10 +18,11 @@ function BloodDonor() {
   const [age, userage] = useState("");
   const [bloodgroup, userbloodgroup] = useState("");
   const [distic, userdistic] = useState("");
+  const [blooddate, userblooddate] = useState("");
   const [phonenumber, userphonenumber] = useState("");
   const [email, useremalil] = useState("");
   const [createpassword, usercreatepassword] = useState("");
-  const createdata ={Name:name,Age:age,BloodGroup:bloodgroup,Distic:distic,PhoneNumber:phonenumber,
+  const createdata ={Name:name,Age:age,BloodGroup:bloodgroup,Distic:distic,BloodDate:blooddate,PhoneNumber:phonenumber,
   Email:email,CreatePassword:createpassword}
 
   // const notify = () => toast("Wow so easy!");
@@ -169,6 +170,24 @@ const createfun =(event)=>{
                 <option value="Other">Other</option>
 
 
+              </select>
+            </div>
+
+            {/* Blood Donotion date */}
+            <div className="input-groups">
+              <label htmlFor="blooddate" className="form-label"> Last Blood Donation</label>
+              <select className=" form-select form-control w-100"
+                name="BloodDate"
+                id="blooddate"
+                placeholder="Enter your Blood Group"
+                onChange={(event) => userblooddate(event.target.value)}
+                required title="Enter Your BloodDate">
+
+                 
+                <option value="Never Donated">Never Donated</option>
+                <option value="3 Months Finished">3 Months Finished</option>
+                <option value="3 Months Not Finished">3 Months Not Finished</option>
+                 
               </select>
             </div>
 

@@ -46,5 +46,5 @@ app.listen(8000,()=>{
 
 
 //database
-mongoose.connect('mongodb+srv://babu:babu77,.@bloodbank.vadqhsx.mongodb.net/?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://mohan:mohan@bloodbank.vadqhsx.mongodb.net/?retryWrites=true&w=majority')
   .then(() => console.log('Connected!'));

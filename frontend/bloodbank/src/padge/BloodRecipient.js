@@ -159,11 +159,13 @@ return <div>
       <div className="card-body">
         <h6 className="ws">{"Blood Group  : "}{e.BloodGroup}</h6>
         <h6 className="ws">{"Distic              : "}{e.Distic}</h6>
+        <h6 className="ws">{"Lost Donation: "}{e.BloodDate}</h6>
         <h6 className="ws">{"Phone Numb  : "}{e.PhoneNumber}</h6>
         <h6 className="ws">{"Age  : "}{e.Age}</h6>
         <h1>  </h1>
       </div>
     </div>
+    
 
   </div>
     
