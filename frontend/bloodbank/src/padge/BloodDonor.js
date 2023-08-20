@@ -8,9 +8,9 @@ import 'react-toastify/dist/ReactToastify.css';
 
 function BloodDonor() {
 
-  
 
-  
+
+
 
 
   ///get the user value
@@ -22,34 +22,36 @@ function BloodDonor() {
   const [phonenumber, userphonenumber] = useState("");
   const [email, useremalil] = useState("");
   const [createpassword, usercreatepassword] = useState("");
-  const createdata ={Name:name,Age:age,BloodGroup:bloodgroup,Distic:distic,BloodDate:blooddate,PhoneNumber:phonenumber,
-  Email:email,CreatePassword:createpassword}
+  const createdata = {
+    Name: name, Age: age, BloodGroup: bloodgroup, Distic: distic, BloodDate: blooddate, PhoneNumber: phonenumber,
+    Email: email, CreatePassword: createpassword
+  }
 
   // const notify = () => toast("Wow so easy!");
-const createfun =(event)=>{
-  var url = window.location.origin;
-  event.preventDefault();
-  axios.post( `${url}/api/register`,createdata)
-    .then(res => {
-     
-     
-      
-      if (res.data==="success") {
-        toast.success("God sent an angel in the form of you. Thank you for this active blood donation")
-        
-      } else if(res.data==="mail alredy exist"){
-        toast.error("This email is already associated with an account.")
-      }
-     
-    } ) 
-    .catch(err =>{
-      console.log("error data");
-    })
+  const createfun = (event) => {
+    var url = window.location.origin;
+    event.preventDefault();
+    axios.post(`${url}/api/register`, createdata)
+      .then(res => {
 
-}
 
-    
- 
+
+        if (res.data === "success") {
+          toast.success("God sent an angel in the form of you. Thank you for this active blood donation")
+
+        } else if (res.data === "mail alredy exist") {
+          toast.error("This email is already associated with an account.")
+        }
+
+      })
+      .catch(err => {
+        console.log("error data");
+      })
+
+  }
+
+
+
 
 
   return <div>
@@ -58,11 +60,11 @@ const createfun =(event)=>{
         <div className="card-header cd">“Donating Money Is Great, But Donating Blood Is Even Better.”</div>
 
         <div className="card-body">
-          <form method="post" 
-          onSubmit={createfun  }
-         
-           >
-            <ToastContainer/>
+          <form method="post"
+            onSubmit={createfun}
+
+          >
+            <ToastContainer />
             {/*   Name */}
             <div className="input-groups ">
               <label htmlFor="name" className="form-label">Name</label>
@@ -124,8 +126,8 @@ const createfun =(event)=>{
                 name="Distic"
                 id="distic"
                 placeholder="Enter your Distic"
-                onChange={(event) =>  userdistic(event.target.value)}
-                
+                onChange={(event) => userdistic(event.target.value)}
+
                 required title="Enter Your Distic">
 
                 <option value="">Selecte your Distic</option>
@@ -179,15 +181,15 @@ const createfun =(event)=>{
               <select className=" form-select form-control w-100"
                 name="BloodDate"
                 id="blooddate"
-                placeholder="Enter your Blood Group"
+                placeholder="Enter your Blood Date"
                 onChange={(event) => userblooddate(event.target.value)}
                 required title="Enter Your BloodDate">
 
-                 
+                <option value="">Selecte your Blood Date</option>
                 <option value="Never Donated">Never Donated</option>
                 <option value="3 Months Finished">3 Months Finished</option>
                 <option value="3 Months Not Finished">3 Months Not Finished</option>
-                 
+
               </select>
             </div>
 
@@ -202,7 +204,7 @@ const createfun =(event)=>{
                 name="Phonenumber"
                 id="phone"
                 placeholder="Enter your Phone Number"
-                onChange={(event) =>   userphonenumber(event.target.value)}
+                onChange={(event) => userphonenumber(event.target.value)}
                 required></input>
             </div>
 
@@ -214,7 +216,7 @@ const createfun =(event)=>{
                 name="Email"
                 id="email"
                 placeholder="Enter your Email"
-                onChange={(event) =>   useremalil(event.target.value)}
+                onChange={(event) => useremalil(event.target.value)}
                 required title="Enter Your Email"></input>
             </div>
 
@@ -227,7 +229,7 @@ const createfun =(event)=>{
                 pattern="[0-9]{}"
                 id="password"
                 placeholder="Create your Password"
-                onChange={(event) =>  usercreatepassword(event.target.value)}
+                onChange={(event) => usercreatepassword(event.target.value)}
                 required title="Enter Your Password"></input>
             </div>
 
@@ -261,7 +263,7 @@ const createfun =(event)=>{
             <div className="btn-group me-end float-end">
               <input type="reset" className="center btn btn-danger"  ></input>
               <input type="submit" className="center btn btn-success" ></input>
-              
+
             </div>
 
 
@@ -273,7 +275,7 @@ const createfun =(event)=>{
       </div>
 
     </div>
-    </div>
+  </div>
 }
 
 export default BloodDonor;

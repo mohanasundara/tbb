@@ -2,7 +2,7 @@
 
  const usersliece = createSlice({
     name:"updatee",
-    initialState:{value:{uid:"hello up",uname:"old",uage:"g",ublood:"",udistic:"",uphone:""}},
+    initialState:{value:{uid:"hello up",uname:"old",uage:"g",ublood:"",udistic:"",udate:"",uphone:""}},
    
     reducers:{
         valueset:(state,action)=>{

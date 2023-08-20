@@ -105,6 +105,8 @@ function Profile() {
         if (e.Email ===user.name) {
           dispatch(valueset({uid:e._id,uname:e.Name,
             ublood:e.BloodGroup,udistic:e.Distic,
+            udate:e.BloodDate,
+
             uphone:e.PhoneNumber,uage:e.Age}))
           return newfilterdata(e);
           
@@ -133,13 +135,14 @@ function Profile() {
    
     <div className="card">
       <div className="card-header  cardhead">
-        <h5 className="ws">{"Name  :  "}{updatee.uname}</h5>
+        <h5 className="ws">{"Name  :   "}{updatee.uname}</h5>
       </div>
       <div className="card-body">
-        <h6 className="ws">{"Blood Group  : "}{updatee.ublood}</h6>
-        <h6 className="ws">{"Distic              : "}{updatee.udistic}</h6>
-        <h6 className="ws">{"Phone Numb  : "}{updatee.uphone}</h6>
-        <h6 className="ws">{"Age  : "}{updatee.uage}</h6>
+        <h6 className="ws">{"Blood Group   :  "}{updatee.ublood}</h6>
+        <h6 className="ws">{"Distic               : "}{updatee.udistic}</h6>
+        <h6 className="ws">{"Last Donation :  "}{updatee.udate}</h6>
+        <h6 className="ws">{"Phone Numb  :  "}{updatee.uphone}</h6>
+        <h6 className="ws">{"Age                  :  "}{updatee.uage}</h6>
         <h1>  </h1>
         {/* submit */}
         <div className="btn-group me-end float-end">

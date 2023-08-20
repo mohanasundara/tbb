@@ -138,6 +138,7 @@ try {
                     Age:req.body. Age,
                     BloodGroup:req.body.BloodGroup,
                     Distic:req.body.Distic,
+                    BloodDate:req.body.BloodDate,
                     PhoneNumber:req.body. PhoneNumber,
                      
                 }});

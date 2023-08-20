@@ -14,6 +14,7 @@ function Edit() {
   const [oldage, upage] = useState(updatee.uage);
   const [oldblood, upblood] = useState(updatee.ublood);
   const [olddistic, updistic] = useState(updatee.udistic);
+  const [oldblooddate, upblooddate] = useState(updatee.udate);
   const [oldphone, upphone] = useState(updatee.uphone);
   
   const navigate=useNavigate();
@@ -24,6 +25,7 @@ function Edit() {
     Age: oldage,
     BloodGroup: oldblood,
     Distic: olddistic,
+    BloodDate: oldblooddate,
     PhoneNumber:oldphone,
 
   }
@@ -163,6 +165,26 @@ function Edit() {
 
                 </select>
               </div>
+
+  {/* Blood Donotion date */}
+  <div className="input-groups">
+              <label htmlFor="blooddate" className="form-label"> Last Blood Donation</label>
+              <select className=" form-select form-control w-100"
+                name="BloodDate"
+                id="blooddate"
+                defaultValue={updatee.udate}
+                placeholder="Enter your Blood Group"
+                onChange={(event) => upblooddate(event.target.value)}
+                required title="Enter Your BloodDate">
+
+                 
+                <option value="Never Donated">Never Donated</option>
+                <option value="3 Months Finished">3 Months Finished</option>
+                <option value="3 Months Not Finished">3 Months Not Finished</option>
+                 
+              </select>
+            </div>
+
 
 
               {/* phone number */}
