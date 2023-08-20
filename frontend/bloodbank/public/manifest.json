@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Tamilnadu ebloodbank",
+  "name": "Tamilnadu ebloodbank",
   "icons": [
     {
       "src": "favicon.ico",
@@ -9,6 +9,22 @@
     },
     {
       "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "png/maskable.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose":"any maskable"
+    },
+    {
+      "src": "logo256.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo384.png",
       "type": "image/png",
       "sizes": "192x192"
     },
