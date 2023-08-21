@@ -1,4 +1,5 @@
 import React from 'react'
+import AdsComponent from '../googleads/AdsComponent';
  
 import Image2 from './image/B2.jpg';
 import Image3 from './image/B3.jpg';
@@ -8,6 +9,7 @@ import Image3 from './image/B3.jpg';
 function Home() {
   return (
     <div>
+ 
   <div id="carouselExampleInterval" className="carousel slide" data-bs-ride="carousel">
   <div className="carousel-inner">
     <div className="carousel-item active" data-bs-interval="5000">
@@ -28,6 +30,13 @@ function Home() {
     <span className="carousel-control-next-icon" aria-hidden="true"></span>
     <span className="visually-hidden">Next</span>
   </button>
+</div>
+
+
+{/* div ads */}
+<div className="container">
+  
+  <AdsComponent dataAdSlot='8453184679'/>
 </div>
     </div>
   )
