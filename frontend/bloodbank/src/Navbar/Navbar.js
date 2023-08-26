@@ -48,6 +48,11 @@ function Navbar() {
             <li className="nav-item">
             <Link to="/profile" className="nav-link psedo" onClick={ showon ? 'collapse navbar-collapse ' : 'collapse navbar-collapse  active'}>Profile</Link>
             </li>  
+
+            <li className="nav-item">
+            <Link to="/privacy" className="nav-link psedo" onClick={ showon ? 'collapse navbar-collapse ' : 'collapse navbar-collapse  active'}>PrivacyPolicy</Link>
+            </li>  
+
           </ul>
         </div>
       </nav>

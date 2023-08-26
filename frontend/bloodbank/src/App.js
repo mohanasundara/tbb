@@ -9,9 +9,9 @@ import Profile from './padge/Profile';
 import Login from './padge/Login';
 import Edit from './update/Edit';
 import Protect from './padge/Protect';
- 
+ import PrivacyPolicy from './padge/PrivacyPolicy';
 
-function App() {
+function App() { 
   
   
    
@@ -29,6 +29,8 @@ function App() {
           <Route path='/bloodrecipient' element={<BloodRecipient/>}/>
           <Route path='/login' element={<Login/>}/>
           <Route path='/edit' element={<Edit/>}/>
+          <Route path='/privacy' element={<PrivacyPolicy/>}/>
+
 
           <Route  element={<Protect/>}>
           <Route path='/profile' element={<Profile/>}/>
